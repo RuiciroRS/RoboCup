@@ -1,0 +1,1 @@
+/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/juegoGC.dir

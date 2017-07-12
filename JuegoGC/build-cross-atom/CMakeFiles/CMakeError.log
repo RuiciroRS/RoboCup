@@ -1,0 +1,53 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1486373268/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1486373268.dir/build.make CMakeFiles/cmTryCompileExec1486373268.dir/build
+make[1]: Entering directory `/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1486373268.dir/CheckSymbolExists.c.o
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-gcc   --sysroot /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DOE_CROSS_BUILD    -o CMakeFiles/cmTryCompileExec1486373268.dir/CheckSymbolExists.c.o   -c /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1486373268
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1486373268.dir/link.txt --verbose=1
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-gcc   --sysroot /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DOE_CROSS_BUILD   -Wl,--sysroot,/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ CMakeFiles/cmTryCompileExec1486373268.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1486373268 -rdynamic 
+CMakeFiles/cmTryCompileExec1486373268.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1): undefined reference to `pthread_create'
+collect2: ld returned 1 exit status
+make[1]: Leaving directory `/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1486373268] Error 1
+make: *** [cmTryCompileExec1486373268/fast] Error 2
+
+File /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2236729889/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2236729889.dir/build.make CMakeFiles/cmTryCompileExec2236729889.dir/build
+make[1]: Entering directory `/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2236729889.dir/CheckFunctionExists.c.o
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-gcc   --sysroot /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DOE_CROSS_BUILD -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2236729889.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2236729889
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2236729889.dir/link.txt --verbose=1
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-gcc   --sysroot /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ -pipe -fomit-frame-pointer -fno-align-jumps -fno-align-functions -fno-align-labels -fno-align-loops -m32 -mtune=generic -DOE_CROSS_BUILD -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--sysroot,/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/ CMakeFiles/cmTryCompileExec2236729889.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2236729889 -rdynamic -lpthreads 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/../lib/gcc/i686-aldebaran-linux-gnu/4.5.3/../../../../i686-aldebaran-linux-gnu/bin/ld: cannot find -lpthreads
+collect2: ld returned 1 exit status
+make[1]: Leaving directory `/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2236729889] Error 1
+make: *** [cmTryCompileExec2236729889/fast] Error 2
+
+
