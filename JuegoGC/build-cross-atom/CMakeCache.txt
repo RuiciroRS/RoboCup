@@ -358,8 +358,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 CMAKE_STRIP:FILEPATH=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-strip
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/ruiciro/.cache/qi/toolchains/cross-atom/toolchain-cross-atom.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/ruiciro/.cache/qi/toolchains/cross-atom/toolchain-cross-atom.cmake
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
@@ -381,6 +381,11 @@ DL_EXECUTABLE:STRING=
 
 //Cleared.
 DL_EXECUTABLE_DEBUG:STRING=
+
+GOALKEEPER_DEPENDS:STRING=ALVISION;OPENCV2_IMGPROC;ALEXTRACTOR;ALPROXIES;ALCOMMON;ALCOMMON-INTERNAL;ALSOAP;RTTOOLS;ALTHREAD;BOOST_SIGNALS;BOOST_PROGRAM_OPTIONS;ALVALUE;TINYXML;RT;QI;BOOST_FILESYSTEM;BOOST_THREAD;BOOST_SYSTEM;PTHREAD;DL;ALERROR;BOOST;OPENCV2_CORE
+
+//Dependencies for the target
+Goalkeeper_LIB_DEPENDS:STATIC=general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalproxies.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalsoap.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/librttools.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalthread.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_signals-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_signals-mt.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_program_options-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_program_options-mt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalvalue.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libtinyxml.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/librt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libqi.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalerror.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_filesystem-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_filesystem-mt.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_thread-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_thread-mt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libpthread.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_system-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_system-mt.so;general;-lpthread;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libdl.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalvision.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libopencv_imgproc.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalextractor.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalproxies.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalproxies.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalcommon.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalsoap.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/librttools.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalthread.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_signals-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_signals-mt.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_program_options-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_program_options-mt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalvalue.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libtinyxml.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/librt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libqi.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_filesystem-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_filesystem-mt.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_thread-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_thread-mt.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libpthread.so;optimized;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_system-mt-1_48.so;debug;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libboost_system-mt.so;general;-lpthread;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libdl.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalerror.so;general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libopencv_core.so;
 
 //this is always defined when we target a robot (either ATOM or
 // GEODE)
@@ -459,6 +464,12 @@ TINYXML_INCLUDE_DIRS:STRING=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1
 
 //Path to a library.
 TINYXML_LIBRARY:FILEPATH=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libtinyxml.so
+
+_QI_USE_LIB_GOALKEEPER:STRING=
+
+_QI_USE_LIB_GOALKEEPER@ALCOMMON@ALVISION@OPENCV2_CORE@OPENCV2_IMGPROC:STRING=ALVISION;OPENCV2_IMGPROC;ALEXTRACTOR;ALPROXIES;ALCOMMON;ALCOMMON-INTERNAL;ALSOAP;RTTOOLS;ALTHREAD;BOOST_SIGNALS;BOOST_PROGRAM_OPTIONS;ALVALUE;TINYXML;RT;QI;BOOST_FILESYSTEM;BOOST_THREAD;BOOST_SYSTEM;PTHREAD;DL;ALERROR;BOOST;OPENCV2_CORE
+
+_QI_USE_LIB_GOALKEEPER@ALCOMMON@BOOST:STRING=ALCOMMON;ALSOAP;RTTOOLS;ALTHREAD;BOOST_SIGNALS;BOOST_PROGRAM_OPTIONS;ALVALUE;TINYXML;RT;QI;ALERROR;BOOST;BOOST_FILESYSTEM;BOOST_THREAD;BOOST_SYSTEM;PTHREAD;DL
 
 _QI_USE_LIB_JUEGOGC:STRING=
 
@@ -647,8 +658,6 @@ Boost_SYSTEM_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 Boost_THREAD_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Boost_THREAD_LIBRARY_RELEASE
 Boost_THREAD_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_AR
-CMAKE_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_BUILD_TOOL
 CMAKE_BUILD_TOOL-ADVANCED:INTERNAL=1
 //What is the target build tool cmake is generating for.
@@ -669,8 +678,6 @@ CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 CMAKE_CPACK_COMMAND:INTERNAL=/usr/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
-//ADVANCED property for variable: CMAKE_CXX_COMPILER
-CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
 CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
@@ -681,8 +688,6 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_COMPILER
-CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -705,7 +710,7 @@ CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
 CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
-CMAKE_FIND_ROOT_PATH:INTERNAL=/home/ruiciro/JuegoGC/build-cross-atom/sdk;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot;/home/ruiciro/SPL/qibuild-1.14.3/cmake/qibuild/modules/
+CMAKE_FIND_ROOT_PATH:INTERNAL=/home/ruiciro/JuegoGC/build-cross-atom/sdk;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot;/home/ruiciro/SPL/qibuild-1.14.3/cmake/qibuild/modules/
 //Name of generator.
 CMAKE_GENERATOR:INTERNAL=Unix Makefiles
 //Name of generator toolset.
@@ -723,8 +728,6 @@ CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/ruiciro/JuegoGC
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
-//ADVANCED property for variable: CMAKE_LINKER
-CMAKE_LINKER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MAKE_PROGRAM
 CMAKE_MAKE_PROGRAM-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS
@@ -738,16 +741,8 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_MODULE_PATH:INTERNAL=/home/ruiciro/SPL/qibuild-1.14.3/cmake;/home/ruiciro/SPL/qibuild-1.14.3/cmake/qibuild/..
-//ADVANCED property for variable: CMAKE_NM
-CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
 CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=1
-//ADVANCED property for variable: CMAKE_OBJCOPY
-CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_OBJDUMP
-CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RANLIB
-CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=/usr/share/cmake-2.8
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
@@ -774,10 +769,6 @@ CMAKE_STATIC_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_STATIC_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_STRIP
-CMAKE_STRIP-ADVANCED:INTERNAL=1
-//uname command
-CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_USE_RELATIVE_PATHS
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
@@ -797,7 +788,12 @@ DL_LIBRARIES:INTERNAL=general;/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain
 DL_PACKAGE_FOUND:INTERNAL=TRUE
 DL_SEARCHED:INTERNAL=TRUE
 GLIB2_DIR:INTERNAL=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/usr/share/cmake/qibuild/modules
+//ADVANCED property for variable: GOALKEEPER_DEPENDS
+GOALKEEPER_DEPENDS-ADVANCED:INTERNAL=1
 GSTREAMER_DIR:INTERNAL=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5//sysroot/usr/share/cmake/qibuild/modules
+Goalkeeper_INTERNAL:INTERNAL=FALSE
+Goalkeeper_NO_INSTALL:INTERNAL=FALSE
+Goalkeeper_SUBFOLDER:INTERNAL=naoqi
 //ADVANCED property for variable: JUEGOGC_DEPENDS
 JUEGOGC_DEPENDS-ADVANCED:INTERNAL=1
 OPENCV2_CORE_INCLUDE_DIRS:INTERNAL=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include
@@ -893,6 +889,12 @@ _Boost_INCLUDE_DIR_LAST:INTERNAL=/home/ruiciro/SPL/linux64-nao-atom-cross-toolch
 _Boost_LIBRARY_DIR_LAST:INTERNAL=/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib
 //Last used Boost_USE_MULTITHREADED value.
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
+//ADVANCED property for variable: _QI_USE_LIB_GOALKEEPER
+_QI_USE_LIB_GOALKEEPER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: _QI_USE_LIB_GOALKEEPER@ALCOMMON@ALVISION@OPENCV2_CORE@OPENCV2_IMGPROC
+_QI_USE_LIB_GOALKEEPER@ALCOMMON@ALVISION@OPENCV2_CORE@OPENCV2_IMGPROC-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: _QI_USE_LIB_GOALKEEPER@ALCOMMON@BOOST
+_QI_USE_LIB_GOALKEEPER@ALCOMMON@BOOST-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: _QI_USE_LIB_JUEGOGC
 _QI_USE_LIB_JUEGOGC-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: _QI_USE_LIB_JUEGOGC@ALCOMMON@ALVISION@OPENCV2_CORE@OPENCV2_IMGPROC

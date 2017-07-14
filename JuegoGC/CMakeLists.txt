@@ -13,7 +13,14 @@ set(_srcs
   CJuego.cpp
   RoboCupGameControlData.h
   SPLCoachMessage.h
+  Goalkeeper.cpp
+  Goalkeeper.h
 )
+
+
+qi_create_lib(Goalkeeper SHARED ${_srcs} SUBFOLDER naoqi)
+
+qi_use_lib(Goalkeeper ALCOMMON BOOST)
 
 if(CJUEGO_IS_REMOTE)
   add_definitions(" -DCJUEGO_IS_REMOTE ")
@@ -23,3 +30,4 @@ else()
 endif()
 
 qi_use_lib(juegoGC ALCOMMON ALVISION OPENCV2_CORE OPENCV2_IMGPROC)
+qi_use_lib(Goalkeeper ALCOMMON ALVISION OPENCV2_CORE OPENCV2_IMGPROC)

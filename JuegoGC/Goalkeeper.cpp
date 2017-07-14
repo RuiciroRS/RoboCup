@@ -10,6 +10,10 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "opencv2/opencv.hpp"
 
+//Fue Penia
+#include <iostream>
+#include <qi/log.hpp>
+
 
 std::string Modulename;
 
@@ -20,11 +24,11 @@ Goalkeeper::Goalkeeper(
     fCallbackMutex(AL::ALMutex::createALMutex())
 {
   setModuleDescription("This module probe de Game Controler for SPL 2017.");
-  //functionName("ChestButtonPressed", getName(), "Method called when the chest button is pressed.");
-  //BIND_METHOD(Goalkeeper::ChestButtonPressed);
-  //functionName("onRobotFallen", getName(), "Method called when the robot fallen.");
-   // BIND_METHOD(Goalkeeper::onRobotFallen);
-    functionName("ballDetected", getName(), "Guarda en variable");
+  functionName("ChestButtonPressed", getName(), "Method called when the chest button is pressed.");
+  BIND_METHOD(Goalkeeper::ChestButtonPressed);
+  functionName("onRobotFallen", getName(), "Method called when the robot fallen.");
+  BIND_METHOD(Goalkeeper::onRobotFallen);
+  functionName("ballDetected", getName(), "Guarda en variable");
   BIND_METHOD(Goalkeeper::ballDetected);
 
 
@@ -39,7 +43,7 @@ Goalkeeper::Goalkeeper(
   // bPenalized = false;
   // mCountLost = 0;
 
-  // std::cout << "Intancia Goalkeeper creada" << name << std::endl << std::flush;
+  std::cout << "Intancia Goalkeeper creada" << name << std::endl << std::flush;
 }
 void Goalkeeper::init(){
   try{
@@ -87,7 +91,7 @@ void Goalkeeper::ballDetected(){
   std::cout << "Entre a ballDetected" << std::endl << std::flush;
   qiLogInfo("Goalkeeper") << "logVeoAlgo" << std::endl;
 
-   AL::ALCriticalSection section(fCallbackMutex);
+  AL::ALCriticalSection section(fCallbackMutex);
   fStateGK =  fMemoryProxy.getData("EKBallDetected");
   
   fMotionProxy.setAngles("Head", fStateGK[1], 0.4);

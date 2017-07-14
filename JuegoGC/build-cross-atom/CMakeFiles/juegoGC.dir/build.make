@@ -95,16 +95,41 @@ CMakeFiles/juegoGC.dir/CJuego.cpp.o.provides: CMakeFiles/juegoGC.dir/CJuego.cpp.
 
 CMakeFiles/juegoGC.dir/CJuego.cpp.o.provides.build: CMakeFiles/juegoGC.dir/CJuego.cpp.o
 
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o: CMakeFiles/juegoGC.dir/flags.make
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o: ../Goalkeeper.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o"
+	/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o -c /home/ruiciro/JuegoGC/Goalkeeper.cpp
+
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/juegoGC.dir/Goalkeeper.cpp.i"
+	/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/ruiciro/JuegoGC/Goalkeeper.cpp > CMakeFiles/juegoGC.dir/Goalkeeper.cpp.i
+
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/juegoGC.dir/Goalkeeper.cpp.s"
+	/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/cross/bin/i686-aldebaran-linux-gnu-g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/ruiciro/JuegoGC/Goalkeeper.cpp -o CMakeFiles/juegoGC.dir/Goalkeeper.cpp.s
+
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.requires:
+.PHONY : CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.requires
+
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.provides: CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.provides.build
+.PHONY : CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.provides
+
+CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.provides.build: CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o
+
 # Object files for target juegoGC
 juegoGC_OBJECTS = \
 "CMakeFiles/juegoGC.dir/main.cpp.o" \
-"CMakeFiles/juegoGC.dir/CJuego.cpp.o"
+"CMakeFiles/juegoGC.dir/CJuego.cpp.o" \
+"CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o"
 
 # External object files for target juegoGC
 juegoGC_EXTERNAL_OBJECTS =
 
 sdk/bin/juegoGC: CMakeFiles/juegoGC.dir/main.cpp.o
 sdk/bin/juegoGC: CMakeFiles/juegoGC.dir/CJuego.cpp.o
+sdk/bin/juegoGC: CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o
 sdk/bin/juegoGC: CMakeFiles/juegoGC.dir/build.make
 sdk/bin/juegoGC: /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalvision.so
 sdk/bin/juegoGC: /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libopencv_imgproc.so
@@ -139,13 +164,15 @@ CMakeFiles/juegoGC.dir/build: sdk/bin/juegoGC
 # Object files for target juegoGC
 juegoGC_OBJECTS = \
 "CMakeFiles/juegoGC.dir/main.cpp.o" \
-"CMakeFiles/juegoGC.dir/CJuego.cpp.o"
+"CMakeFiles/juegoGC.dir/CJuego.cpp.o" \
+"CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o"
 
 # External object files for target juegoGC
 juegoGC_EXTERNAL_OBJECTS =
 
 CMakeFiles/CMakeRelink.dir/juegoGC: CMakeFiles/juegoGC.dir/main.cpp.o
 CMakeFiles/CMakeRelink.dir/juegoGC: CMakeFiles/juegoGC.dir/CJuego.cpp.o
+CMakeFiles/CMakeRelink.dir/juegoGC: CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o
 CMakeFiles/CMakeRelink.dir/juegoGC: CMakeFiles/juegoGC.dir/build.make
 CMakeFiles/CMakeRelink.dir/juegoGC: /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libalvision.so
 CMakeFiles/CMakeRelink.dir/juegoGC: /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/lib/libopencv_imgproc.so
@@ -179,6 +206,7 @@ CMakeFiles/juegoGC.dir/preinstall: CMakeFiles/CMakeRelink.dir/juegoGC
 
 CMakeFiles/juegoGC.dir/requires: CMakeFiles/juegoGC.dir/main.cpp.o.requires
 CMakeFiles/juegoGC.dir/requires: CMakeFiles/juegoGC.dir/CJuego.cpp.o.requires
+CMakeFiles/juegoGC.dir/requires: CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o.requires
 .PHONY : CMakeFiles/juegoGC.dir/requires
 
 CMakeFiles/juegoGC.dir/clean:

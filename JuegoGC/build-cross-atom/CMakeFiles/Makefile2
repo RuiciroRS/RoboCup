@@ -53,13 +53,57 @@ CMAKE_SOURCE_DIR = /home/ruiciro/JuegoGC
 CMAKE_BINARY_DIR = /home/ruiciro/JuegoGC/build-cross-atom
 
 #=============================================================================
+# Target rules for target CMakeFiles/Goalkeeper.dir
+
+# All Build rule for target.
+CMakeFiles/Goalkeeper.dir/all:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/depend
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles  1 2 3
+	@echo "Built target Goalkeeper"
+.PHONY : CMakeFiles/Goalkeeper.dir/all
+
+# Include target in all.
+all: CMakeFiles/Goalkeeper.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Goalkeeper.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Goalkeeper.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles 0
+.PHONY : CMakeFiles/Goalkeeper.dir/rule
+
+# Convenience name for target.
+Goalkeeper: CMakeFiles/Goalkeeper.dir/rule
+.PHONY : Goalkeeper
+
+# Pre-install relink rule for target.
+CMakeFiles/Goalkeeper.dir/preinstall:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/preinstall
+.PHONY : CMakeFiles/Goalkeeper.dir/preinstall
+
+# Prepare target for install.
+preinstall: CMakeFiles/Goalkeeper.dir/preinstall
+.PHONY : preinstall
+
+# clean rule for target.
+CMakeFiles/Goalkeeper.dir/clean:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/clean
+.PHONY : CMakeFiles/Goalkeeper.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Goalkeeper.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/juegoGC.dir
 
 # All Build rule for target.
 CMakeFiles/juegoGC.dir/all:
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/depend
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles  1 2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles  4 5 6
 	@echo "Built target juegoGC"
 .PHONY : CMakeFiles/juegoGC.dir/all
 
@@ -69,7 +113,7 @@ all: CMakeFiles/juegoGC.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/juegoGC.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/juegoGC.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles 0
 .PHONY : CMakeFiles/juegoGC.dir/rule

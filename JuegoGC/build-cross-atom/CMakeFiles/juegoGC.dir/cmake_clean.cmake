@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/juegoGC.dir/main.cpp.o"
   "CMakeFiles/juegoGC.dir/CJuego.cpp.o"
+  "CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o"
   "sdk/bin/juegoGC.pdb"
   "sdk/bin/juegoGC"
   "sdk/bin/juegoGC.pdb"

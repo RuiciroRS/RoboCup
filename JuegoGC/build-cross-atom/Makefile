@@ -91,7 +91,7 @@ install/strip/fast: install/strip
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"binary\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"binary\" \"lib\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -140,6 +140,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Goalkeeper
+
+# Build rule for target.
+Goalkeeper: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Goalkeeper
+.PHONY : Goalkeeper
+
+# fast build rule for target.
+Goalkeeper/fast:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/build
+.PHONY : Goalkeeper/fast
+
+# Manual pre-install relink rule for target.
+Goalkeeper/preinstall:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/preinstall
+.PHONY : Goalkeeper/preinstall
+
+#=============================================================================
 # Target rules for targets named juegoGC
 
 # Build rule for target.
@@ -162,6 +180,7 @@ CJuego.o: CJuego.cpp.o
 
 # target to build an object file
 CJuego.cpp.o:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/CJuego.cpp.o
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/CJuego.cpp.o
 .PHONY : CJuego.cpp.o
 
@@ -170,6 +189,7 @@ CJuego.i: CJuego.cpp.i
 
 # target to preprocess a source file
 CJuego.cpp.i:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/CJuego.cpp.i
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/CJuego.cpp.i
 .PHONY : CJuego.cpp.i
 
@@ -178,14 +198,43 @@ CJuego.s: CJuego.cpp.s
 
 # target to generate assembly for a file
 CJuego.cpp.s:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/CJuego.cpp.s
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/CJuego.cpp.s
 .PHONY : CJuego.cpp.s
+
+Goalkeeper.o: Goalkeeper.cpp.o
+.PHONY : Goalkeeper.o
+
+# target to build an object file
+Goalkeeper.cpp.o:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/Goalkeeper.cpp.o
+	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o
+.PHONY : Goalkeeper.cpp.o
+
+Goalkeeper.i: Goalkeeper.cpp.i
+.PHONY : Goalkeeper.i
+
+# target to preprocess a source file
+Goalkeeper.cpp.i:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/Goalkeeper.cpp.i
+	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/Goalkeeper.cpp.i
+.PHONY : Goalkeeper.cpp.i
+
+Goalkeeper.s: Goalkeeper.cpp.s
+.PHONY : Goalkeeper.s
+
+# target to generate assembly for a file
+Goalkeeper.cpp.s:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/Goalkeeper.cpp.s
+	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/Goalkeeper.cpp.s
+.PHONY : Goalkeeper.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/main.cpp.o
 .PHONY : main.cpp.o
 
@@ -194,6 +243,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/main.cpp.i
 .PHONY : main.cpp.i
 
@@ -202,6 +252,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles/Goalkeeper.dir/build.make CMakeFiles/Goalkeeper.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/juegoGC.dir/build.make CMakeFiles/juegoGC.dir/main.cpp.s
 .PHONY : main.cpp.s
 
@@ -211,6 +262,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... Goalkeeper"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -221,6 +273,9 @@ help:
 	@echo "... CJuego.o"
 	@echo "... CJuego.i"
 	@echo "... CJuego.s"
+	@echo "... Goalkeeper.o"
+	@echo "... Goalkeeper.i"
+	@echo "... Goalkeeper.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
