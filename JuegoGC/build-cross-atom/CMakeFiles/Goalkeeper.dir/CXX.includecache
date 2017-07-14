@@ -6,6 +6,92 @@
 
 #IncludeRegexTransform: 
 
+/home/ruiciro/JuegoGC/CJuego.cpp
+alvalue/alvalue.h
+-
+alcommon/alproxy.h
+-
+alcommon/albroker.h
+-
+qi/log.hpp
+-
+althread/alcriticalsection.h
+-
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/opencv.hpp
+/home/ruiciro/JuegoGC/opencv2/opencv.hpp
+qi/path.hpp
+-
+Goalkeeper.h
+/home/ruiciro/JuegoGC/Goalkeeper.h
+CJuego.h
+/home/ruiciro/JuegoGC/CJuego.h
+RoboCupGameControlData.h
+/home/ruiciro/JuegoGC/RoboCupGameControlData.h
+
+/home/ruiciro/JuegoGC/CJuego.h
+boost/shared_ptr.hpp
+-
+alcommon/almodule.h
+-
+string
+-
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+arpa/inet.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+fcntl.h
+-
+errno.h
+-
+time.h
+-
+alproxies/alredballtrackerproxy.h
+-
+alproxies/almemoryproxy.h
+-
+alproxies/altexttospeechproxy.h
+-
+alproxies/alledsproxy.h
+-
+althread/almutex.h
+-
+alproxies/almotionproxy.h
+-
+alproxies/alrobotpostureproxy.h
+-
+alproxies/alframemanagerproxy.h
+-
+RoboCupGameControlData.h
+/home/ruiciro/JuegoGC/RoboCupGameControlData.h
+SPLStandardMessage.h
+/home/ruiciro/JuegoGC/SPLStandardMessage.h
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+alproxies/alvideodeviceproxy.h
+-
+alvision/alimage.h
+-
+alvision/alvisiondefinitions.h
+-
+alerror/alerror.h
+-
+
 /home/ruiciro/JuegoGC/Goalkeeper.cpp
 Goalkeeper.h
 /home/ruiciro/JuegoGC/Goalkeeper.h
@@ -102,6 +188,24 @@ stdint.h
 stdint.h
 -
 
+/home/ruiciro/JuegoGC/main.cpp
+iostream
+-
+signal.h
+-
+boost/shared_ptr.hpp
+-
+alcommon/albroker.h
+-
+alcommon/almodule.h
+-
+alcommon/albrokermanager.h
+-
+alcommon/altoolsmain.h
+-
+CJuego.h
+/home/ruiciro/JuegoGC/CJuego.h
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/_G_config.h
 bits/types.h
 -
@@ -128,6 +232,12 @@ boost/smart_ptr/enable_shared_from_this.hpp
 boost/noncopyable.hpp
 -
 qi/macro.hpp
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/alcommon/albrokermanager.h
+vector
+-
+boost/shared_ptr.hpp
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/alcommon/alfunctor.h
@@ -212,6 +322,12 @@ alcommon/alproxy.hxx
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/alcommon/alproxy.hxx
 alcommon/detail/alpcall.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/alcommon/altoolsmain.h
+boost/shared_ptr.hpp
+-
+boost/function/function_fwd.hpp
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/alcommon/detail/alfunctorwithoutreturn.h
@@ -454,10 +570,16 @@ features.h
 netinet/in.h
 -
 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/bitsperlong.h
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/errno-base.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/errno.h
 asm-generic/errno-base.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/int-ll64.h
+asm/bitsperlong.h
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/socket.h
@@ -466,8 +588,30 @@ asm/sockios.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/sockios.h
 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm-generic/types.h
+asm-generic/int-ll64.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/bitsperlong.h
+asm-generic/bitsperlong.h
+-
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/errno.h
 asm-generic/errno.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/posix_types.h
+posix_types_32.h
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/posix_types_32.h
+posix_types_64.h
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/posix_types_64.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/posix_types_32.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/posix_types_64.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/sigcontext.h
+linux/types.h
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/socket.h
@@ -476,6 +620,10 @@ asm-generic/socket.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/sockios.h
 asm-generic/sockios.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/asm/types.h
+asm-generic/types.h
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/assert.h
@@ -560,7 +708,23 @@ bits/local_lim.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/setjmp.h
 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sigaction.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sigcontext.h
+asm/sigcontext.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/siginfo.h
+bits/wordsize.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/signum.h
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sigset.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sigstack.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sigthread.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/bits/sockaddr.h
 
@@ -8154,6 +8318,20 @@ asm/errno.h
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/linux/limits.h
 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/linux/posix_types.h
+linux/stddef.h
+-
+asm/posix_types.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/linux/stddef.h
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/linux/types.h
+asm/types.h
+-
+linux/posix_types.h
+-
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/math.h
 features.h
 -
@@ -8458,6 +8636,14 @@ vector
 qi/config.hpp
 -
 
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/qi/path.hpp
+string
+-
+vector
+-
+qi/config.hpp
+-
+
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/sched.h
 features.h
 -
@@ -8468,6 +8654,34 @@ stddef.h
 time.h
 -
 bits/sched.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/signal.h
+features.h
+-
+bits/sigset.h
+-
+bits/types.h
+-
+bits/signum.h
+-
+time.h
+-
+bits/siginfo.h
+-
+bits/sigaction.h
+-
+bits/sigcontext.h
+-
+stddef.h
+-
+bits/sigstack.h
+-
+sys/ucontext.h
+-
+bits/pthreadtypes.h
+-
+bits/sigthread.h
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/stdint.h
@@ -8590,6 +8804,14 @@ sys/select.h
 sys/sysmacros.h
 -
 bits/pthreadtypes.h
+-
+
+/home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/sys/ucontext.h
+features.h
+-
+signal.h
+-
+bits/sigcontext.h
 -
 
 /home/ruiciro/SPL/linux64-nao-atom-cross-toolchain-1.14.5/sysroot/usr/include/sys/uio.h

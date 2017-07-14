@@ -24,7 +24,7 @@
 #include <althread/almutex.h>
 #include <alproxies/almotionproxy.h>
 #include <alproxies/alrobotpostureproxy.h>
-# include <alproxies/alframemanagerproxy.h>
+#include <alproxies/alframemanagerproxy.h>
 
 #include "RoboCupGameControlData.h"
 #include "SPLStandardMessage.h"

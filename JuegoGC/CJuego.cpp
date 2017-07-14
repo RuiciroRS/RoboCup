@@ -1,6 +1,3 @@
-#include "CJuego.h"
-
-
 #include <alvalue/alvalue.h>
 #include <alcommon/alproxy.h>
 #include <alcommon/albroker.h>
@@ -13,6 +10,10 @@
 #include <qi/path.hpp>
 
 #include "Goalkeeper.h"
+//Si no sale...fue culpa del gobierno...
+#include "CJuego.h"
+#include "RoboCupGameControlData.h"
+
 
 #define TEAM_NUMBER 5
 #define TEAM_COLOR 1
@@ -22,7 +23,7 @@
 
 
 //std::string Modulename1;
-//boost::shared_ptr<AL::ALBroker> broker_Global;
+boost::shared_ptr<AL::ALBroker> broker_Global;
 CJuego::CJuego(
   boost::shared_ptr<AL::ALBroker> broker,
   const std::string& name): AL::ALModule(broker, name),
@@ -39,8 +40,8 @@ CJuego::CJuego(
 
   std::cout << "constr" << std::endl;
   //Modulename1 = name;
- // broker_Global = broker;
-  //AL::ALModule::createModule<Goalkeeper>(broker, "Goalkeeper");
+  broker_Global = broker;
+  AL::ALModule::createModule<Goalkeeper>(broker, "Goalkeeper");
 	mComportamiento = DELANTERO;
 
         bTracking =  false;
@@ -279,6 +280,8 @@ void CJuego::set()
 void CJuego::play()
 {
 
+  std::cout << "Entre a Play" << std::endl << std::flush;
+
   // Find your library
 std::string filename = qi::path::findLib("/home/nao/libshooter.so");
 // Open your library
@@ -311,17 +314,17 @@ if (!handle)
 // {
 //   qi::os::dlclose(handle);
 //   return -1;
-//}
+// }
   // Agregar codigo para el comportamiento en el estado play
 //Portero
-  std::cout << "3" << std::endl << std::flush;
+  //std::cout << "3" << std::endl << std::flush;
   //AL::ALModule::createModule<Goalkeeper>(broker_Global, "Goalkeeper");
   // fMotionProxy.setStiffnesses("Head", 0.7);
   // fMotionProxy.setStiffnesses("Body", 0.7);
   // fPostureProxy.goToPosture("StandInit", 0.5f);
   // std::cout << Modulename << std::endl << std::flush;
   // fMemoryProxy.subscribeToMicroEvent("EKBallDetected", Modulename, "EKBallDetected", "ballDetected");
-  std::cout << "Play" << std::endl << std::flush;
+  //std::cout << "Play" << std::endl << std::flush;
   //qiLogInfo("CJuego") << "logPlay" << std::endl;
   //caidader();
   //std::cout << "Ya me tire" << std::endl << std::flush;

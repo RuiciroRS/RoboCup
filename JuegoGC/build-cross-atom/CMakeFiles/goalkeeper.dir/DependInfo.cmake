@@ -4,9 +4,9 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ruiciro/JuegoGC/CJuego.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/juegoGC.dir/CJuego.cpp.o"
-  "/home/ruiciro/JuegoGC/Goalkeeper.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/juegoGC.dir/Goalkeeper.cpp.o"
-  "/home/ruiciro/JuegoGC/main.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/juegoGC.dir/main.cpp.o"
+  "/home/ruiciro/JuegoGC/CJuego.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/goalkeeper.dir/CJuego.cpp.o"
+  "/home/ruiciro/JuegoGC/Goalkeeper.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/goalkeeper.dir/Goalkeeper.cpp.o"
+  "/home/ruiciro/JuegoGC/main.cpp" "/home/ruiciro/JuegoGC/build-cross-atom/CMakeFiles/goalkeeper.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
